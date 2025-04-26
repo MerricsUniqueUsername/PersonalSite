@@ -2,8 +2,21 @@
   <div class="w-screen flex items-center justify-center z-20">
     <div class="flex flex-col items-center justify-center w-full bg-zinc-900/10 backdrop-blur-sm text-white border-t border-gray-800/50 p-6">
       <h1 class="text-3xl md:text-4xl font-bold mb-6">Some of my work</h1>
+      <p class="text-gray-300 text-lg md:text-xl mb-6">Click on a project to view it</p>
+
+
 
       <div class="projects flex flex-wrap items-center justify-center gap-6 md:gap-8 p-4 w-full max-w-7xl">
+
+        <div @click="goto('https://fastformbuilder.vercel.app/')" class="project fade w-full sm:w-[calc(50%-20px)] md:w-[calc(33%-22px)] lg:w-[calc(25%-24px)] xl:w-[340px]">
+          <img src="../assets/Images/formbuilder.png" alt="Project Image" class="w-full h-48 md:h-56 lg:h-64 object-cover rounded-lg" />
+          <div class="flex mt-3 justify-between items-center">
+            <span class="text-lg md:text-xl font-medium">Form Builder</span>
+            <GithubButton @click="goto('https://github.com/MerricsUniqueUsername/FastFormApp-Frontend')" />
+          </div>
+          <p class="text-sm md:text-base text-gray-300 mt-2">Form building application where the user can create a form, add logical conditions to elements of the form, edit the theme, and add custom CSS</p>
+        </div>
+
         <div @click="goto('https://trajectory-tuner.vercel.app/')" class="project fade w-full sm:w-[calc(50%-20px)] md:w-[calc(33%-22px)] lg:w-[calc(25%-24px)] xl:w-[340px]">
           <img src="../assets/Images/trajtuner.png" alt="Project Image" class="w-full h-48 md:h-56 lg:h-64 object-cover rounded-lg" />
           <div class="flex mt-3 justify-between items-center">
